@@ -1,6 +1,6 @@
 "use client";
 
-import type { ToDo } from "@/lib/types";
+import type { ToDo } from "@/src/lib/types";
 import {
   Table,
   TableBody,
@@ -8,11 +8,11 @@ import {
   TableHead,
   TableHeader,
   TableRow,
-} from "@/components/ui/table";
-import { Button } from "@/components/ui/button";
-import { Checkbox } from "@/components/ui/checkbox";
+} from "@/src/components/ui/table";
+import { Button } from "@/src/components/ui/button";
+import { Checkbox } from "@/src/components/ui/checkbox";
 import { Edit, Trash2 } from 'lucide-react';
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardContent, CardHeader, CardTitle } from "@/src/components/ui/card";
 
 type ToDoTableProps = {
   todos: ToDo[];
@@ -21,6 +21,8 @@ type ToDoTableProps = {
   startEditing: (todo: ToDo) => void;
 };
 
+
+// test for empty table and when data is available 
 export function ToDoTable({ todos, deleteTodo, toggleComplete, startEditing }: ToDoTableProps) {
   return (
     <Card className="shadow-md">

@@ -1,10 +1,10 @@
 "use client";
 
 import React, { useState, useEffect, useCallback } from 'react';
-import type { ToDo } from '@/lib/types';
-import { ToDoForm } from '@/components/todo-form';
-import { ToDoTable } from '@/components/todo-table';
-import { ProductivityDashboard } from '@/components/productivity-dashboard';
+import type { ToDo } from '@/src/lib/types';
+import { ToDoForm } from '@/src/components/todo-form';
+import { ToDoTable } from '@/src/components/todo-table';
+import { ProductivityDashboard } from '@/src/components/productivity-dashboard';
 import { v4 as uuidv4 } from 'uuid'; // Ensure uuid is installed: npm install uuid @types/uuid
 
 export default function Home() {

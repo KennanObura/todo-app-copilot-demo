@@ -6,7 +6,7 @@ import { useForm } from "react-hook-form";
 import { z } from "zod";
 import React, { useEffect } from 'react';
 
-import { Button } from "@/components/ui/button";
+import { Button } from "@/src/components/ui/button";
 import {
   Form,
   FormControl,
@@ -14,9 +14,9 @@ import {
   FormItem,
   FormLabel,
   FormMessage,
-} from "@/components/ui/form";
-import { Input } from "@/components/ui/input";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+} from "@/src/components/ui/form";
+import { Input } from "@/src/components/ui/input";
+import { Card, CardContent, CardHeader, CardTitle } from "@/src/components/ui/card";
 import { Plus, Save } from 'lucide-react';
 
 const formSchema = z.object({
